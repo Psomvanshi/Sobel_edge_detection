@@ -1,0 +1,604 @@
+***************************************************************************************
+*                      PROJECT ARCHIVE SUMMARY REPORT
+*
+*                      (archive_project_summary.txt)
+*
+*  PLEASE READ THIS REPORT TO GET THE DETAILED INFORMATION ABOUT THE PROJECT DATA THAT
+*  WAS ARCHIVED FOR THE CURRENT PROJECT
+*
+* The report is divided into following five sections:-
+*
+* Section (1) - PROJECT INFORMATION
+*  This section provides the details of the current project that was archived
+*
+* Section (2) - INCLUDED/EXCLUDED RUNS
+*  This section summarizes the list of design runs for which the results were included
+*  or excluded from the archive
+*
+* Section (3) - ARCHIVED SOURCES
+*  This section summarizes the list of files that were added to the archive
+*
+* Section (3.1) - INCLUDE FILES
+*  This section summarizes the list of 'include' files that were added to the archive
+*
+* Section (3.1.1) - INCLUDE_DIRS SETTINGS
+*  This section summarizes the 'verilog include directory' path settings, if any
+*
+* Section (3.2) - REMOTE SOURCES
+*  This section summarizes the list of referenced 'remote' files that were 'imported'
+*  into the archived project
+*
+* Section (3.3) - SOURCES SUMMARY
+*  This section summarizes the list of all the files present in the archive
+*
+* Section (3.4) - REMOTE IP DEFINITIONS
+*  This section summarizes the list of all the remote IP's present in the archive
+*
+* Section (4) - JOURNAL/LOG FILES
+*  This section summarizes the list of journal/log files that were added to the archive
+*
+***************************************************************************************
+
+Section (1) - PROJECT INFORMATION
+---------------------------------
+Name      = sobel_zybo
+Directory = C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo
+
+WARNING: Please verify the compiled library directory path for the following property in the
+         current project. The path may point to an invalid location after opening this project.
+         This could happen if the project was unarchived in a location where this path is not
+         accessible. To resolve this issue, please set this property with the desired path
+         before launching simulation:-
+
+Property = compxlib.xsim_compiled_library_dir
+Path     = 
+
+Section (2) - INCLUDED RUNS
+---------------------------
+The run results were included for the following runs in the archived project:-
+
+<synth_1>
+<design_1_v_tc_0_1_synth_1>
+<design_1_xlconstant_0_1_synth_1>
+<design_1_dvi2rgb_0_9_synth_1>
+<design_1_v_vid_in_axi4s_0_1_synth_1>
+<design_1_v_axi4s_vid_out_0_1_synth_1>
+<design_1_rgb2vga_0_1_synth_1>
+<design_1_xlconstant_0_2_synth_1>
+<design_1_sobel_edge_detect_0_1_synth_1>
+<design_1_clk_wiz_0_synth_1>
+<impl_1>
+
+Section (3) - ARCHIVED SOURCES
+------------------------------
+The following sub-sections describes the list of sources that were archived for the current project:-
+
+Section (3.1) - INCLUDE FILES
+-----------------------------
+List of referenced 'RTL Include' files that were 'imported' into the archived project:-
+
+None
+
+Section (3.1.1) - INCLUDE_DIRS SETTINGS
+---------------------------------------
+List of the "INCLUDE_DIRS" fileset property settings that may or may not be applicable in the archived
+project, since most the 'RTL Include' files referenced in the original project were 'imported' into the
+archived project.
+
+<sources_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+<sim_1> fileset RTL include directory paths (INCLUDE_DIRS):-
+None
+
+Section (3.2) - REMOTE SOURCES
+------------------------------
+List of referenced 'remote' design files that were 'imported' into the archived project:-
+
+<design_1_clk_wiz_0>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh
+
+<design_1_dvi2rgb_0_9>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncBase.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/EEPROM_8b.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TWI_SlaveCtl.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/GlitchFilter.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsync.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/DVI_Constants.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsyncReset.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/PhaseAlign.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/InputSERDES.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ChannelBond.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ResyncToBUFG.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Decoder.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Clocking.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/dvi2rgb.vhd
+
+<design_1_rgb2vga_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/69dc/src/rgb2vga.vhd
+
+<design_1_sobel_edge_detect_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd
+
+<design_1_v_axi4s_vid_out_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/9a07/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v
+
+<design_1_v_tc_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+
+<design_1_v_vid_in_axi4s_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+
+<design_1_xlconstant_0_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+
+<design_1_xlconstant_0_2>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+
+<constrs_1>
+None
+
+<sim_1>
+None
+
+<sources_1>
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncBase.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/EEPROM_8b.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TWI_SlaveCtl.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/GlitchFilter.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsync.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/DVI_Constants.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsyncReset.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/PhaseAlign.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/InputSERDES.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ChannelBond.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ResyncToBUFG.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Decoder.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Clocking.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/dvi2rgb.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/9a07/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/69dc/src/rgb2vga.vhd
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+
+Section (3.3) - SOURCES SUMMARY
+-------------------------------
+List of all the source files present in the archived project:-
+
+<sources_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/sim/design_1_sobel_edge_detect_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/constraints/sobel_edge_detect_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/synth/design_1_sobel_edge_detect_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_board.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncBase.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/EEPROM_8b.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TWI_SlaveCtl.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/GlitchFilter.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsync.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/DVI_Constants.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsyncReset.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/PhaseAlign.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/InputSERDES.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ChannelBond.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ResyncToBUFG.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Decoder.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Clocking.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/dvi2rgb.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/sim/design_1_dvi2rgb_0_9.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/1024_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/900p_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/1080_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/720p_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/dvi2rgb.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/dvi2rgb_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/synth/design_1_dvi2rgb_0_9.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/sim/design_1_v_vid_in_axi4s_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/synth/design_1_v_vid_in_axi4s_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/9a07/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/sim/design_1_v_axi4s_vid_out_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/synth/design_1_v_axi4s_vid_out_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/sim/design_1_v_tc_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/synth/design_1_v_tc_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/69dc/src/rgb2vga.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/sim/design_1_rgb2vga_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/synth/design_1_rgb2vga_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/sim/design_1_xlconstant_0_2.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.xml
+./sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/design_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+./sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+./sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+./sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+
+<constrs_1>
+./sobel_zybo.srcs/constrs_1/new/constraint_zybo.xdc
+
+<sim_1>
+None
+
+<design_1_v_tc_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/sim/design_1_v_tc_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/synth/design_1_v_tc_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_1/design_1_v_tc_0_1.xml
+
+<design_1_xlconstant_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/sim/design_1_xlconstant_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1.xml
+
+<design_1_dvi2rgb_0_9>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncBase.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/EEPROM_8b.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TWI_SlaveCtl.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/GlitchFilter.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsync.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/DVI_Constants.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/SyncAsyncReset.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/PhaseAlign.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/InputSERDES.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ChannelBond.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/ResyncToBUFG.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Decoder.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/TMDS_Clocking.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/269e/src/dvi2rgb.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/sim/design_1_dvi2rgb_0_9.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/1024_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/900p_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/1080_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/720p_edid.data
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/dvi2rgb.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/src/dvi2rgb_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/synth/design_1_dvi2rgb_0_9.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_dvi2rgb_0_9/design_1_dvi2rgb_0_9.xml
+
+<design_1_v_vid_in_axi4s_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/sim/design_1_v_vid_in_axi4s_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/synth/design_1_v_vid_in_axi4s_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_vid_in_axi4s_0_1/design_1_v_vid_in_axi4s_0_1.xml
+
+<design_1_v_axi4s_vid_out_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/cced/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/6694/hdl/v_tc_v6_1_vh_rfs.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/d987/hdl/v_vid_in_axi4s_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/9a07/hdl/v_axi4s_vid_out_v4_0_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/sim/design_1_v_axi4s_vid_out_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_clocks.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/synth/design_1_v_axi4s_vid_out_0_1.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_1/design_1_v_axi4s_vid_out_0_1.xml
+
+<design_1_rgb2vga_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/69dc/src/rgb2vga.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/sim/design_1_rgb2vga_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/synth/design_1_rgb2vga_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_rgb2vga_0_1/design_1_rgb2vga_0_1.xml
+
+<design_1_xlconstant_0_2>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/f1c3/hdl/xlconstant_v1_1_vl_rfs.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/sim/design_1_xlconstant_0_2.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/design_1_xlconstant_0_2.xml
+
+<design_1_sobel_edge_detect_0_1>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/sim/design_1_sobel_edge_detect_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/constraints/sobel_edge_detect_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/synth/design_1_sobel_edge_detect_0_1.vhd
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.xml
+
+<design_1_clk_wiz_0>
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xci
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_board.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_7s_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_pll.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ipshared/b65a/mmcm_pll_drp_func_us_plus_mmcm.vh
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_clk_wiz.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.dcp
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_stub.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_stub.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_sim_netlist.v
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_sim_netlist.vhdl
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0_ooc.xdc
+./sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0/design_1_clk_wiz_0.xml
+
+Section (3.4) - REMOTE IP DEFINITIONS
+-------------------------------------
+List of all the remote IP's present in the archived project:-
+
+<sources_1>
+./sobel_zybo.ipdefs/sobel_edge_hls_0/solution1/impl/ip
+./sobel_zybo.ipdefs/vivado_library_0/ip/dvi2rgb_v1_7
+./sobel_zybo.ipdefs/vivado_library_0/if/tmds_v1_0
+./sobel_zybo.ipdefs/vivado_library_0/ip/rgb2vga_v1_0
+
+<design_1_v_tc_0_1>
+None
+
+<design_1_xlconstant_0_1>
+None
+
+<design_1_dvi2rgb_0_9>
+None
+
+<design_1_v_vid_in_axi4s_0_1>
+None
+
+<design_1_v_axi4s_vid_out_0_1>
+None
+
+<design_1_rgb2vga_0_1>
+None
+
+<design_1_xlconstant_0_2>
+None
+
+<design_1_sobel_edge_detect_0_1>
+None
+
+<design_1_clk_wiz_0>
+None
+
+None
+
+Section (4) - JOURNAL/LOG FILES
+-------------------------------
+List of Journal/Log files that were added to the archived project:-
+
+Source File = C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/vivado.jou
+Archived Location = ./sobel_zybo/vivado.jou
+
+Source File = C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/vivado.log
+Archived Location = ./sobel_zybo/vivado.log
+

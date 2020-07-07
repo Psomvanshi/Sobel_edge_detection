@@ -1,0 +1,1437 @@
+
+*** Running vivado
+    with args -log design_1_sobel_edge_detect_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sobel_edge_detect_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_sobel_edge_detect_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 310.660 ; gain = 72.398
+Command: synth_design -top design_1_sobel_edge_detect_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 464.910 ; gain = 93.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_sobel_edge_detect_0_1' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/synth/design_1_sobel_edge_detect_0_1.vhd:85]
+INFO: [Synth 8-3491] module 'sobel_edge_detect' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:12' bound to instance 'U0' of component 'sobel_edge_detect' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/synth/design_1_sobel_edge_detect_0_1.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detect' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:41]
+INFO: [Synth 8-3491] module 'Block_proc' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd:12' bound to instance 'Block_proc_U0' of component 'Block_proc' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:524]
+INFO: [Synth 8-638] synthesizing module 'Block_proc' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd:30]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Block_proc' (1#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Block_proc.vhd:30]
+INFO: [Synth 8-3491] module 'AXIvideo2Mat' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:12' bound to instance 'AXIvideo2Mat_U0' of component 'AXIvideo2Mat' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:540]
+INFO: [Synth 8-638] synthesizing module 'AXIvideo2Mat' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:92]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:95]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:144]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:146]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:152]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:178]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:195]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:200]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'AXIvideo2Mat' (2#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/AXIvideo2Mat.vhd:57]
+INFO: [Synth 8-3491] module 'CvtColor' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:12' bound to instance 'CvtColor_U0' of component 'CvtColor' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:583]
+INFO: [Synth 8-638] synthesizing module 'CvtColor' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:51]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:82]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:85]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:91]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:108]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:139]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectbkb' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:32' bound to instance 'sobel_edge_detectbkb_U17' of component 'sobel_edge_detectbkb' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:215]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectbkb' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectbkb_DSP48_0' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:6' bound to instance 'sobel_edge_detectbkb_DSP48_0_U' of component 'sobel_edge_detectbkb_DSP48_0' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectbkb_DSP48_0' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectbkb_DSP48_0' (3#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectbkb' (4#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectbkb.vhd:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectcud' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:42' bound to instance 'sobel_edge_detectcud_U18' of component 'sobel_edge_detectcud' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectcud' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectcud_DSP48_1' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:12' bound to instance 'sobel_edge_detectcud_DSP48_1_U' of component 'sobel_edge_detectcud_DSP48_1' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectcud_DSP48_1' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectcud_DSP48_1' (5#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectcud' (6#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectdEe' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:42' bound to instance 'sobel_edge_detectdEe_U19' of component 'sobel_edge_detectdEe' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectdEe' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:57]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectdEe_DSP48_2' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:12' bound to instance 'sobel_edge_detectdEe_DSP48_2_U' of component 'sobel_edge_detectdEe_DSP48_2' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectdEe_DSP48_2' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectdEe_DSP48_2' (7#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectdEe' (8#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor' (9#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:51]
+INFO: [Synth 8-3491] module 'Sobel' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:12' bound to instance 'Sobel_U0' of component 'Sobel' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:620]
+INFO: [Synth 8-638] synthesizing module 'Sobel' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:57]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:60]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:78]
+INFO: [Synth 8-3491] module 'Filter2D' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:12' bound to instance 'grp_Filter2D_fu_96' of component 'Filter2D' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'Filter2D' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:41]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:87]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:90]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:93]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:111]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:114]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:255]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:511]
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:104]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg_ram' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:13' bound to instance 'Filter2D_k_buf_0_eOg_ram_U' of component 'Filter2D_k_buf_0_eOg_ram' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg_ram' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:33]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg_ram' (10#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg' (11#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:104]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:527]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_0_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:543]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:559]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:575]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_1_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:591]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_3_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:607]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_4_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:623]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'Filter2D_k_buf_0_eOg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D_k_buf_0_eOg.vhd:87' bound to instance 'k_buf_2_val_5_U' of component 'Filter2D_k_buf_0_eOg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:639]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U31' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:655]
+INFO: [Synth 8-638] synthesizing module 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detectncg' (12#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:30]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U32' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:671]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U33' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:687]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U34' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:703]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U35' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:719]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U36' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:735]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U37' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:751]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U38' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:767]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U39' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:783]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U40' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:799]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U41' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:815]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U42' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:831]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U43' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:847]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U44' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:863]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U45' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:879]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U46' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:895]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U47' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:911]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_edge_detectncg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectncg.vhd:13' bound to instance 'sobel_edge_detectncg_U48' of component 'sobel_edge_detectncg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:927]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D' (13#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Sobel' (14#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Sobel.vhd:45]
+INFO: [Synth 8-3491] module 'CvtColor_1' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:12' bound to instance 'CvtColor_1_U0' of component 'CvtColor_1' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:651]
+INFO: [Synth 8-638] synthesizing module 'CvtColor_1' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:45]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:73]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:89]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor_1' (15#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor_1.vhd:45]
+INFO: [Synth 8-3491] module 'Mat2AXIvideo' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:12' bound to instance 'Mat2AXIvideo_U0' of component 'Mat2AXIvideo' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:682]
+INFO: [Synth 8-638] synthesizing module 'Mat2AXIvideo' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:72]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:75]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:152]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:164]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:185]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:251]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:285]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:319]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:401]
+INFO: [Synth 8-256] done synthesizing module 'Mat2AXIvideo' (16#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Mat2AXIvideo.vhd:42]
+INFO: [Synth 8-3491] module 'fifo_w11_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:50' bound to instance 'img0_rows_V_c_U' of component 'fifo_w11_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:710]
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w11_d2_A_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:13' bound to instance 'U_fifo_w11_d2_A_shiftReg' of component 'fifo_w11_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'fifo_w11_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d2_A_shiftReg' (17#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w11_d2_A' (18#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:69]
+INFO: [Synth 8-3491] module 'fifo_w12_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:50' bound to instance 'img0_cols_V_c_U' of component 'fifo_w12_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:723]
+INFO: [Synth 8-638] synthesizing module 'fifo_w12_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w12_d2_A_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:13' bound to instance 'U_fifo_w12_d2_A_shiftReg' of component 'fifo_w12_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'fifo_w12_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 12 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w12_d2_A_shiftReg' (19#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w12_d2_A' (20#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:69]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img0_data_stream_0_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:736]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:13' bound to instance 'U_fifo_w8_d2_A_shiftReg' of component 'fifo_w8_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d2_A_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:26]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A_shiftReg' (21#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d2_A' (22#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:69]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img0_data_stream_1_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:749]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img0_data_stream_2_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:762]
+INFO: [Synth 8-3491] module 'fifo_w11_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w11_d2_A.vhd:50' bound to instance 'img0_rows_V_c10_U' of component 'fifo_w11_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:775]
+INFO: [Synth 8-3491] module 'fifo_w12_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w12_d2_A.vhd:50' bound to instance 'img0_cols_V_c11_U' of component 'fifo_w12_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:788]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img1_data_stream_0_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:801]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img1_data_stream_1_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:814]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img1_data_stream_2_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:827]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img2_data_stream_0_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:840]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img2_data_stream_1_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:853]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img2_data_stream_2_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:866]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img3_data_stream_0_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:879]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img3_data_stream_1_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:892]
+INFO: [Synth 8-3491] module 'fifo_w8_d2_A' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/fifo_w8_d2_A.vhd:50' bound to instance 'img3_data_stream_2_s_U' of component 'fifo_w8_d2_A' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:905]
+INFO: [Synth 8-3491] module 'start_for_CvtColoocq' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:50' bound to instance 'start_for_CvtColoocq_U' of component 'start_for_CvtColoocq' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:918]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_CvtColoocq_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:13' bound to instance 'U_start_for_CvtColoocq_shiftReg' of component 'start_for_CvtColoocq_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq_shiftReg' (23#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq' (24#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColoocq.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_Sobel_U0' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:50' bound to instance 'start_for_Sobel_U0_U' of component 'start_for_Sobel_U0' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:931]
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Sobel_U0_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:13' bound to instance 'U_start_for_Sobel_U0_shiftReg' of component 'start_for_Sobel_U0_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0_shiftReg' (25#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0' (26#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Sobel_U0.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_CvtColopcA' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:50' bound to instance 'start_for_CvtColopcA_U' of component 'start_for_CvtColopcA' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:944]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_CvtColopcA_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:13' bound to instance 'U_start_for_CvtColopcA_shiftReg' of component 'start_for_CvtColopcA_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA_shiftReg' (27#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA' (28#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_CvtColopcA.vhd:69]
+INFO: [Synth 8-3491] module 'start_for_Mat2AXIqcK' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:50' bound to instance 'start_for_Mat2AXIqcK_U' of component 'start_for_Mat2AXIqcK' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:957]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:69]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'start_for_Mat2AXIqcK_shiftReg' declared at 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:13' bound to instance 'U_start_for_Mat2AXIqcK_shiftReg' of component 'start_for_Mat2AXIqcK_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK_shiftReg' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:26]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK_shiftReg' (29#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK' (30#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/start_for_Mat2AXIqcK.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'sobel_edge_detect' (31#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detect.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'design_1_sobel_edge_detect_0_1' (32#1) [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/synth/design_1_sobel_edge_detect_0_1.vhd:85]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design Filter2D_k_buf_0_eOg has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 529.469 ; gain = 157.891
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 529.699 ; gain = 158.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 529.699 ; gain = 158.121
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/constraints/sobel_edge_detect_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/constraints/sobel_edge_detect_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 869.406 ; gain = 2.125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 869.406 ; gain = 497.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 869.406 ; gain = 497.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 869.406 ; gain = 497.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_last_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_user_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2603_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:538]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2609_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:554]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2619_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:570]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2625_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:586]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2631_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:602]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2637_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:618]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2643_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:634]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2649_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2597_reg[10:0]' [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:650]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_2603_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:538]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_2609_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:554]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_3_addr_reg_2619_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:570]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_4_addr_reg_2625_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:586]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_5_addr_reg_2631_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:602]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_3_addr_reg_2637_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:618]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_4_addr_reg_2643_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:634]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_5_addr_reg_2649_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/Filter2D.vhd:650]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond390_i_fu_633_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_623_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond389_i_fu_925_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp1_fu_947_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_fu_667_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_116_0_1_fu_679_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_9_fu_673_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond4_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AXI_video_strm_V_user_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_228_p2" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 869.406 ; gain = 497.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 8     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 7     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 25    
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 8     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 10    
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 88    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 37    
+	                1 Bit    Registers := 136   
++---RAMs : 
+	              10K Bit         RAMs := 9     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     12 Bit        Muxes := 5     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 77    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 20    
+	   4 Input      2 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 143   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Block_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 29    
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Filter2D_k_buf_0_eOg_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              10K Bit         RAMs := 1     
+Module sobel_edge_detectncg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 5     
+	   4 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 3     
+	   6 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 5     
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 48    
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 27    
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 10    
+Module Sobel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module CvtColor_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 20    
+Module fifo_w11_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module fifo_w11_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module fifo_w12_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module fifo_w12_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_CvtColoocq_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColoocq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Sobel_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Sobel_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_CvtColopcA_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColopcA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module start_for_Mat2AXIqcK_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIqcK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element r_V_i_i_reg_438_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:252]
+WARNING: [Synth 8-6014] Unused sequential element tmp_89_reg_428_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:459]
+WARNING: [Synth 8-6014] Unused sequential element tmp_89_reg_428_pp0_iter2_reg_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:459]
+WARNING: [Synth 8-6014] Unused sequential element tmp_90_reg_433_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:460]
+WARNING: [Synth 8-6014] Unused sequential element tmp_90_reg_433_pp0_iter2_reg_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:460]
+WARNING: [Synth 8-6014] Unused sequential element tmp_88_reg_423_reg was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/CvtColor.vhd:468]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectdEe.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ipshared/ea36/hdl/vhdl/sobel_edge_detectcud.vhd:32]
+DSP Report: Generating DSP r_V_i_i_reg_438_reg, operation Mode is: ((A:0x1322d0)*B2)'.
+DSP Report: register tmp_88_reg_423_reg is absorbed into DSP r_V_i_i_reg_438_reg.
+DSP Report: register r_V_i_i_reg_438_reg is absorbed into DSP r_V_i_i_reg_438_reg.
+DSP Report: operator sobel_edge_detectbkb_U17/sobel_edge_detectbkb_DSP48_0_U/p_cvt is absorbed into DSP r_V_i_i_reg_438_reg.
+DSP Report: Generating DSP sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p, operation Mode is: PCIN+(A:0x74bc6)*B''.
+DSP Report: register B is absorbed into DSP sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p.
+DSP Report: operator sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p is absorbed into DSP sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p.
+DSP Report: operator sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/m is absorbed into DSP sobel_edge_detectdEe_U19/sobel_edge_detectdEe_DSP48_2_U/p.
+DSP Report: Generating DSP sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p, operation Mode is: C+(A:0x259168)*B''.
+DSP Report: register B is absorbed into DSP sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p.
+DSP Report: operator sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p is absorbed into DSP sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p.
+DSP Report: operator sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/m is absorbed into DSP sobel_edge_detectcud_U18/sobel_edge_detectcud_DSP48_1_U/p.
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/exitcond390_i_fu_633_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/exitcond389_i_fu_925_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/icmp_fu_667_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/icmp1_fu_947_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/tmp_9_fu_673_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_96/tmp_116_0_1_fu_679_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_216_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond4_fu_204_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_228_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_3_addr_reg_2597_reg[0]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_96/tmp_50_reg_2579_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_3_addr_reg_2597_reg[1]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_96/tmp_50_reg_2579_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/Sobel_U0/grp_Filter2D_fu_96/row_assign_9_0_0_t_reg_2545_reg[0]' (FDE) to 'U0/Sobel_U0/grp_Filter2D_fu_96/row_assign_9_0_2_t_reg_2559_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][0]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][1]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][1]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][2]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][2]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][3]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][3]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][4]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][4]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][5]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][5]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][6]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][6]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][7]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][7]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][8]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][9]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][9]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][10]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][11]' (FDE) to 'U0/img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][0]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][1]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][1]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][2]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][2]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[11]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[12]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[13]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[14]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[15]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[16]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[17]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[18]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[19]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[20]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[21]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[22]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[23]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[24]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[25]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[26]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[27]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[28]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[29]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[30]' (FDE) to 'U0/AXIvideo2Mat_U0/cols_V_reg_484_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Sobel_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CvtColor_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CvtColor_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][3]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][3]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][4]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][5]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][5]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][6]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][6]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][7]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][7]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][8]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][8]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][9]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3886] merging instance 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][10]' (FDE) to 'U0/img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[10]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[11]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[12]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[13]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[14]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[15]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[16]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[17]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[18]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[19]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[20]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[21]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[22]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[23]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[24]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[25]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[26]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[27]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[28]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[29]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[30]' (FDE) to 'U0/AXIvideo2Mat_U0/rows_V_reg_479_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][0]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][1]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][1]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][2]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][2]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][3]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][3]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][4]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][4]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][5]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][5]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][6]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][6]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][7]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][7]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][8]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][9]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][9]' (FDE) to 'U0/img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_cols_V_c_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_rows_V_c_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_rows_V_c10_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_rows_V_c10_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\AXIvideo2Mat_U0/rows_V_reg_479_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXIvideo2Mat_U0/rows_V_reg_479_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_cols_V_c11_U/U_fifo_w12_d2_A_shiftReg/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\img0_rows_V_c10_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\img0_rows_V_c10_U/U_fifo_w11_d2_A_shiftReg/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\CvtColor_U0/p_src_rows_V_read_reg_400_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\CvtColor_U0/p_src_rows_V_read_reg_400_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/rows_V_reg_479_reg[9]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/rows_V_reg_479_reg[31]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/ap_done_reg_reg) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[28]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[27]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[26]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[25]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[24]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[23]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[22]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[21]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[20]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[19]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[18]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[17]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[16]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[15]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[14]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[13]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[12]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[11]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[10]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[9]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[8]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_443_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/p_src_rows_V_read_reg_400_reg[9]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/p_src_rows_V_read_reg_400_reg[10]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_2_fu_362_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_3_fu_366_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_s_fu_350_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_1_fu_354_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_4_fu_374_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/right_border_buf_1_5_fu_378_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_6_reg_2675_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[7]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[6]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[5]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[4]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[3]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[2]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[1]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_fu_266_reg[0]) is unused and will be removed from module sobel_edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_96/src_kernel_win_1_va_1_fu_270_reg[7]) is unused and will be removed from module sobel_edge_detect.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 869.406 ; gain = 497.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CvtColor    | ((A:0x1322d0)*B2)'   | 21     | 8      | -      | -      | 29     | 0    | 1    | -    | -    | -     | 1    | 0    | 
+|CvtColor    | PCIN+(A:0x74bc6)*B'' | 20     | 9      | -      | -      | 29     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|CvtColor    | C+(A:0x259168)*B''   | 23     | 9      | 30     | -      | 30     | 0    | 2    | 0    | -    | -     | 0    | 0    | 
++------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_60/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_3_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_61/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_4_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/i_2_62/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_5_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 927.543 ; gain = 555.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 931.406 ; gain = 559.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_3_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_4_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U0/Sobel_U0/grp_Filter2D_fu_96/k_buf_0_val_5_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:23 ; elapsed = 00:01:34 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:24 ; elapsed = 00:01:35 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    39|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |DSP48E1_3 |     1|
+|5     |LUT1      |    31|
+|6     |LUT2      |    75|
+|7     |LUT3      |   202|
+|8     |LUT4      |   163|
+|9     |LUT5      |   177|
+|10    |LUT6      |   225|
+|11    |RAMB18E1  |     3|
+|12    |FDRE      |   815|
+|13    |FDSE      |    54|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------+-----------------------------+------+
+|      |Instance                               |Module                       |Cells |
++------+---------------------------------------+-----------------------------+------+
+|1     |top                                    |                             |  1787|
+|2     |  U0                                   |sobel_edge_detect            |  1787|
+|3     |    AXIvideo2Mat_U0                    |AXIvideo2Mat                 |   507|
+|4     |    CvtColor_1_U0                      |CvtColor_1                   |    83|
+|5     |    CvtColor_U0                        |CvtColor                     |   138|
+|6     |      sobel_edge_detectcud_U18         |sobel_edge_detectcud         |     5|
+|7     |        sobel_edge_detectcud_DSP48_1_U |sobel_edge_detectcud_DSP48_1 |     5|
+|8     |      sobel_edge_detectdEe_U19         |sobel_edge_detectdEe         |     1|
+|9     |        sobel_edge_detectdEe_DSP48_2_U |sobel_edge_detectdEe_DSP48_2 |     1|
+|10    |    Mat2AXIvideo_U0                    |Mat2AXIvideo                 |   221|
+|11    |    Sobel_U0                           |Sobel                        |   486|
+|12    |      grp_Filter2D_fu_96               |Filter2D                     |   482|
+|13    |        k_buf_0_val_3_U                |Filter2D_k_buf_0_eOg         |     9|
+|14    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_21  |     9|
+|15    |        k_buf_0_val_4_U                |Filter2D_k_buf_0_eOg_18      |    12|
+|16    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_20  |    12|
+|17    |        k_buf_0_val_5_U                |Filter2D_k_buf_0_eOg_19      |    70|
+|18    |          Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram     |    70|
+|19    |    img0_cols_V_c11_U                  |fifo_w12_d2_A                |     8|
+|20    |    img0_cols_V_c_U                    |fifo_w12_d2_A_0              |     9|
+|21    |    img0_data_stream_0_s_U             |fifo_w8_d2_A                 |    32|
+|22    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg_17     |    24|
+|23    |    img0_data_stream_1_s_U             |fifo_w8_d2_A_1               |    32|
+|24    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg_16     |    24|
+|25    |    img0_data_stream_2_s_U             |fifo_w8_d2_A_2               |    32|
+|26    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg_15     |    24|
+|27    |    img0_rows_V_c10_U                  |fifo_w11_d2_A                |     8|
+|28    |    img0_rows_V_c_U                    |fifo_w11_d2_A_3              |     9|
+|29    |    img1_data_stream_0_s_U             |fifo_w8_d2_A_4               |    48|
+|30    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg_14     |    40|
+|31    |    img1_data_stream_1_s_U             |fifo_w8_d2_A_5               |     8|
+|32    |    img1_data_stream_2_s_U             |fifo_w8_d2_A_6               |     8|
+|33    |    img2_data_stream_0_s_U             |fifo_w8_d2_A_7               |    33|
+|34    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg_13     |    24|
+|35    |    img2_data_stream_1_s_U             |fifo_w8_d2_A_8               |     8|
+|36    |    img2_data_stream_2_s_U             |fifo_w8_d2_A_9               |     8|
+|37    |    img3_data_stream_0_s_U             |fifo_w8_d2_A_10              |     8|
+|38    |    img3_data_stream_1_s_U             |fifo_w8_d2_A_11              |     8|
+|39    |    img3_data_stream_2_s_U             |fifo_w8_d2_A_12              |    48|
+|40    |      U_fifo_w8_d2_A_shiftReg          |fifo_w8_d2_A_shiftReg        |    40|
+|41    |    start_for_CvtColoocq_U             |start_for_CvtColoocq         |    13|
+|42    |    start_for_CvtColopcA_U             |start_for_CvtColopcA         |    11|
+|43    |    start_for_Mat2AXIqcK_U             |start_for_Mat2AXIqcK         |    10|
+|44    |    start_for_Sobel_U0_U               |start_for_Sobel_U0           |    11|
++------+---------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 422 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:13 . Memory (MB): peak = 958.453 ; gain = 247.168
+Synthesis Optimization Complete : Time (s): cpu = 00:01:25 ; elapsed = 00:01:36 . Memory (MB): peak = 958.453 ; gain = 586.875
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+358 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:43 . Memory (MB): peak = 958.453 ; gain = 598.344
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/design_1_sobel_edge_detect_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ip/design_1_sobel_edge_detect_0_1/design_1_sobel_edge_detect_0_1.xci
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/design_1_sobel_edge_detect_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_sobel_edge_detect_0_1_utilization_synth.rpt -pb design_1_sobel_edge_detect_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 958.453 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 25 15:25:57 2019...

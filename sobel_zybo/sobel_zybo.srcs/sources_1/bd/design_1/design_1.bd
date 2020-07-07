@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xF9784C1E4F56DE76" bd:device="xc7z010clg400-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2" bd:top="design_1" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>hdmi_in</spirit:name>
+        <spirit:slave/>
+        <spirit:busType spirit:library="interface" spirit:name="tmds" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="tmds_rtl" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>hdmi_in_ddc</spirit:name>
+        <spirit:master/>
+        <spirit:busType spirit:library="interface" spirit:name="iic" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="iic_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>CLK.SYS_CLOCK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>sys_clock</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>125000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>design_1_sys_clock</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="design_1_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>sys_clock</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_pBlue</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>4</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_pRed</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>4</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_pHSync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_pGreen</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>5</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>vga_pVSync</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>hdmi_hpd</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>0</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>design_1_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>sobel_edge_detect_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="hls" spirit:name="sobel_edge_detect" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_sobel_edge_detect_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_wiz</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="6.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_clk_wiz_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">200.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">5.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLK_IN1_BOARD_INTERFACE">sys_clock</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">109.241</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dvi2rgb_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="dvi2rgb" spirit:vendor="digilentinc.com" spirit:version="1.7"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_dvi2rgb_0_9</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="kClkRange">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="kEdidFileName">720p_edid.data</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>v_vid_in_axi4s_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="v_vid_in_axi4s" spirit:vendor="xilinx.com" spirit:version="4.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_v_vid_in_axi4s_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>v_axi4s_vid_out_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="v_axi4s_vid_out" spirit:vendor="xilinx.com" spirit:version="4.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_v_axi4s_vid_out_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>v_tc_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="v_tc" spirit:vendor="xilinx.com" spirit:version="6.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_v_tc_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="HAS_AXI4_LITE">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="auto_generation_mode">true</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>rgb2vga_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="rgb2vga" spirit:vendor="digilentinc.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_rgb2vga_0_1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>zero</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>one</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_xlconstant_0_2</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:interconnections>
+      <spirit:interconnection>
+        <spirit:name>dvi2rgb_0_RGB</spirit:name>
+        <spirit:activeInterface spirit:busRef="RGB" spirit:componentRef="dvi2rgb_0"/>
+        <spirit:activeInterface spirit:busRef="vid_io_in" spirit:componentRef="v_vid_in_axi4s_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>v_vid_in_axi4s_0_video_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="video_out" spirit:componentRef="v_vid_in_axi4s_0"/>
+        <spirit:activeInterface spirit:busRef="stream_in" spirit:componentRef="sobel_edge_detect_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>sobel_edge_detect_0_stream_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="stream_out" spirit:componentRef="sobel_edge_detect_0"/>
+        <spirit:activeInterface spirit:busRef="video_in" spirit:componentRef="v_axi4s_vid_out_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>v_vid_in_axi4s_0_vtiming_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="vtiming_in" spirit:componentRef="v_tc_0"/>
+        <spirit:activeInterface spirit:busRef="vtiming_out" spirit:componentRef="v_vid_in_axi4s_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>v_tc_0_vtiming_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="vtiming_in" spirit:componentRef="v_axi4s_vid_out_0"/>
+        <spirit:activeInterface spirit:busRef="vtiming_out" spirit:componentRef="v_tc_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>v_axi4s_vid_out_0_vid_io_out</spirit:name>
+        <spirit:activeInterface spirit:busRef="vid_io_out" spirit:componentRef="v_axi4s_vid_out_0"/>
+        <spirit:activeInterface spirit:busRef="vid_in" spirit:componentRef="rgb2vga_0"/>
+      </spirit:interconnection>
+    </spirit:interconnections>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>sys_clock_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sys_clock"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz" spirit:portRef="clk_in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_clk_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz" spirit:portRef="clk_out1"/>
+        <spirit:internalPortReference spirit:componentRef="dvi2rgb_0" spirit:portRef="RefClk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2vga_0_vga_pBlue</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="vga_pBlue"/>
+        <spirit:externalPortReference spirit:portRef="vga_pBlue"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2vga_0_vga_pRed</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="vga_pRed"/>
+        <spirit:externalPortReference spirit:portRef="vga_pRed"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2vga_0_vga_pHSync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="vga_pHSync"/>
+        <spirit:externalPortReference spirit:portRef="vga_pHSync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2vga_0_vga_pGreen</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="vga_pGreen"/>
+        <spirit:externalPortReference spirit:portRef="vga_pGreen"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rgb2vga_0_vga_pVSync</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="vga_pVSync"/>
+        <spirit:externalPortReference spirit:portRef="vga_pVSync"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="zero" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz" spirit:portRef="reset"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dvi2rgb_0_PixelClk</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dvi2rgb_0" spirit:portRef="PixelClk"/>
+        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="sobel_edge_detect_0" spirit:portRef="ap_clk"/>
+        <spirit:internalPortReference spirit:componentRef="v_axi4s_vid_out_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="rgb2vga_0" spirit:portRef="PixelClk"/>
+        <spirit:internalPortReference spirit:componentRef="v_tc_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>one_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="one" spirit:portRef="dout"/>
+        <spirit:externalPortReference spirit:portRef="hdmi_hpd"/>
+        <spirit:internalPortReference spirit:componentRef="sobel_edge_detect_0" spirit:portRef="ap_start"/>
+        <spirit:internalPortReference spirit:componentRef="sobel_edge_detect_0" spirit:portRef="ap_rst_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>v_axi4s_vid_out_0_vtg_ce</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="v_axi4s_vid_out_0" spirit:portRef="vtg_ce"/>
+        <spirit:internalPortReference spirit:componentRef="v_tc_0" spirit:portRef="gen_clken"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+    <spirit:hierConnections>
+      <spirit:hierConnection spirit:interfaceRef="hdmi_in/TMDS_0_1">
+        <spirit:activeInterface spirit:busRef="TMDS" spirit:componentRef="dvi2rgb_0"/>
+      </spirit:hierConnection>
+      <spirit:hierConnection spirit:interfaceRef="hdmi_in_ddc/dvi2rgb_0_DDC">
+        <spirit:activeInterface spirit:busRef="DDC" spirit:componentRef="dvi2rgb_0"/>
+      </spirit:hierConnection>
+    </spirit:hierConnections>
+  </spirit:design>
+
+</bd:repository>

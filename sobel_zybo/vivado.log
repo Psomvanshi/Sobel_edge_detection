@@ -1,0 +1,908 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar 25 14:26:55 2019
+# Process ID: 5056
+# Current directory: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7508 C:\Users\user\Desktop\sobel_zedboard_zybo\sobel_zybo\sobel_zybo.xpr
+# Log file: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/vivado.log
+# Journal file: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:23 . Memory (MB): peak = 871.047 ; gain = 135.258
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd}
+Successfully read diagram <design_1> from BD file <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 944.395 ; gain = 51.574
+set_property  ip_repo_paths  C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+set_property  ip_repo_paths  {c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls C:/Users/user/Desktop/sobel_zedboard_zybo/ip} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 973.992 ; gain = 0.000
+update_ip_catalog
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detect:1.0 sobel_edge_detect_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_vid_in_axi4s:4.0 v_vid_in_axi4s_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 v_tc_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+create_bd_cell: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1126.695 ; gain = 115.840
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2vga:1.0 rgb2vga_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+endgroup
+regenerate_bd_layout
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.TMDS_BOARD_INTERFACE hdmi_in [get_bd_cells -quiet /dvi2rgb_0]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_in' cannot be created
+INFO: [board_interface 100-100] create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_in
+ERROR: [BD 5-106] Arguments to the connect_bd_intf_net command cannot be empty.
+ERROR: [Common 17-39] 'connect_bd_intf_net' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" '
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+1
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.TMDS_BOARD_INTERFACE hdmi_in [get_bd_cells -quiet /dvi2rgb_0]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_in' cannot be created
+INFO: [board_interface 100-100] create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_in
+ERROR: [BD 5-106] Arguments to the connect_bd_intf_net command cannot be empty.
+ERROR: [Common 17-39] 'connect_bd_intf_net' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" '
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+1
+endgroup
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz_0/clk_in1'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+set_property -dict [list CONFIG.kEdidFileName {720p_edid.data}] [get_bd_cells dvi2rgb_0]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+delete_bd_objs [get_bd_cells rgb2vga_0] [get_bd_cells xlconstant_0] [get_bd_cells v_vid_in_axi4s_0] [get_bd_cells sobel_edge_detect_0] [get_bd_cells v_axi4s_vid_out_0] [get_bd_cells clk_wiz_0] [get_bd_cells v_tc_0]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.TMDS_BOARD_INTERFACE hdmi_in [get_bd_cells -quiet /dvi2rgb_0]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_in' cannot be created
+INFO: [board_interface 100-100] create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_in
+ERROR: [BD 5-106] Arguments to the connect_bd_intf_net command cannot be empty.
+ERROR: [Common 17-39] 'connect_bd_intf_net' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" '
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+1
+endgroup
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:sobel_edge_detect:1.0 sobel_edge_detect_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.TMDS_BOARD_INTERFACE hdmi_in [get_bd_cells -quiet /dvi2rgb_0]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_in' cannot be created
+INFO: [board_interface 100-100] create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_in
+ERROR: [BD 5-106] Arguments to the connect_bd_intf_net command cannot be empty.
+ERROR: [Common 17-39] 'connect_bd_intf_net' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_0/TMDS" -diagram "design_1" '
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+1
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+endgroup
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_1
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_1/TMDS" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.TMDS_BOARD_INTERFACE hdmi_in [get_bd_cells -quiet /dvi2rgb_1]
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'hdmi_in' cannot be created
+INFO: [board_interface 100-100] create_bd_intf_port -mode Slave -vlnv digilentinc.com:interface:tmds_rtl:1.0 hdmi_in
+ERROR: [BD 5-106] Arguments to the connect_bd_intf_net command cannot be empty.
+ERROR: [Common 17-39] 'connect_bd_intf_net' failed due to earlier errors.
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "hdmi_in" -ip_intf "dvi2rgb_1/TMDS" -diagram "design_1" '
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+1
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_1/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_cells dvi2rgb_1]
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+endgroup
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {hdmi_in_ddc ( HDMI In ) } Manual_Source {Auto}}  [get_bd_intf_pins dvi2rgb_0/DDC]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 hdmi_in_ddc
+INFO: [board_rule 100-100] connect_bd_intf_net /hdmi_in_ddc /dvi2rgb_0/DDC
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins dvi2rgb_0/RefClk]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+CRITICAL WARNING: [BD 41-52] Could not find the abstraction definition specified by the vlnv: digilentinc.com:interface:tmds_rtl:1.0 
+CRITICAL WARNING: [BD 41-181] Type specified by the VLNV: 'digilentinc.com:interface:tmds_rtl:1.0', cannot be found. Interface port: 'TMDS_0' cannot be created
+endgroup
+delete_bd_objs [get_bd_intf_nets dvi2rgb_0_DDC] [get_bd_nets clk_wiz_clk_out1] [get_bd_cells dvi2rgb_0]
+delete_bd_objs [get_bd_intf_ports hdmi_in_ddc]
+create_bd_port -dir I hdmi_in
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+CRITICAL WARNING: [BD 41-51] Could not find bus definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+CRITICAL WARNING: [BD 41-49] Could not find abstraction definition for the interface: TMDS 
+endgroup
+set_property location {0.5 104 -130} [get_bd_cells dvi2rgb_0]
+delete_bd_objs [get_bd_cells dvi2rgb_0]
+delete_bd_objs [get_bd_ports hdmi_in]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/user/Desktop/sobel_zedboard_zybo/ip/dvi2rgb_v1_7/component.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/user/Desktop/sobel_zedboard_zybo/ip/rgb2vga_v1_0/component.xml. It will be created.
+set_property  ip_repo_paths  c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+set_property  ip_repo_paths  {c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls C:/Users/user/Desktop/sobel_zedboard_zybo/vivado_library} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/vivado_library'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1202.492 ; gain = 0.000
+update_ip_catalog
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:dvi2rgb:1.7 dvi2rgb_0
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins dvi2rgb_0/TMDS]
+endgroup
+set_property name hdmi_in [get_bd_intf_ports TMDS_0]
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+WARNING: [BD 5-235] No pins matched 'get_bd_pins /dvi2rgb_0/DDC'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl /clk_wiz/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [board_rule 100-100] Board automation did not generate location constraint for /clk_wiz/reset. Users may need to specify the location constraint manually.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {hdmi_in_ddc ( HDMI In ) } Manual_Source {Auto}}  [get_bd_intf_pins dvi2rgb_0/DDC]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 hdmi_in_ddc
+INFO: [board_rule 100-100] connect_bd_intf_net /hdmi_in_ddc /dvi2rgb_0/DDC
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz/clk_out1 (100 MHz)" }  [get_bd_pins dvi2rgb_0/RefClk]
+endgroup
+regenerate_bd_layout
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/vivado_library'.
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1212.355 ; gain = 1.531
+report_ip_status -name ip_status
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_vid_in_axi4s:4.0 v_vid_in_axi4s_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_axi4s_vid_out:4.0 v_axi4s_vid_out_0
+endgroup
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins v_vid_in_axi4s_0/aclk]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins v_vid_in_axi4s_0/aclk]'
+startgroup
+set_property -dict [list CONFIG.kClkRange {1} CONFIG.kEdidFileName {1080_edid.data}] [get_bd_cells dvi2rgb_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins dvi2rgb_0/RGB] [get_bd_intf_pins v_vid_in_axi4s_0/vid_io_in]
+connect_bd_intf_net [get_bd_intf_pins v_vid_in_axi4s_0/video_out] [get_bd_intf_pins sobel_edge_detect_0/stream_in]
+connect_bd_intf_net [get_bd_intf_pins sobel_edge_detect_0/stream_out] [get_bd_intf_pins v_axi4s_vid_out_0/video_in]
+regenerate_bd_layout
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz/clk_out1 (100 MHz)" }  [get_bd_pins sobel_edge_detect_0/ap_clk]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-455] Automation on '/v_vid_in_axi4s_0/aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/v_axi4s_vid_out_0/aclk' will not be run, since it is obsolete due to previously run automations
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/clk_wiz/clk_out1 (100 MHz)" }  [get_bd_pins sobel_edge_detect_0/ap_clk]'
+INFO: [Common 17-17] undo 'startgroup'
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_tc:6.1 v_tc_0
+endgroup
+set_property location {3 542 278} [get_bd_cells v_tc_0]
+set_property -dict [list CONFIG.HAS_AXI4_LITE {false}] [get_bd_cells v_tc_0]
+connect_bd_net [get_bd_pins v_tc_0/clk] [get_bd_pins v_vid_in_axi4s_0/axis_enable]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins v_tc_0/clk] [get_bd_pins v_vid_in_axi4s_0/axis_enable]'
+connect_bd_intf_net [get_bd_intf_pins v_tc_0/vtiming_in] [get_bd_intf_pins v_vid_in_axi4s_0/vtiming_out]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vtiming_in] [get_bd_intf_pins v_tc_0/vtiming_out]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:rgb2vga:1.0 rgb2vga_0
+endgroup
+set_property location {6.5 1432 407} [get_bd_cells rgb2vga_0]
+connect_bd_intf_net [get_bd_intf_pins v_axi4s_vid_out_0/vid_io_out] [get_bd_intf_pins rgb2vga_0/vid_in]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+make_bd_pins_external  [get_bd_pins rgb2vga_0/vga_pBlue] [get_bd_pins rgb2vga_0/vga_pRed] [get_bd_pins rgb2vga_0/vga_pHSync] [get_bd_pins rgb2vga_0/vga_pGreen] [get_bd_pins rgb2vga_0/vga_pVSync]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+delete_bd_objs [get_bd_nets reset_rtl_1]
+delete_bd_objs [get_bd_ports reset_rtl]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins clk_wiz/reset]
+set_property name zero_0 [get_bd_cells xlconstant_0]
+set_property name zero [get_bd_cells zero_0]
+startgroup
+set_property -dict [list CONFIG.CONST_VAL {0}] [get_bd_cells zero]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property name one [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins sobel_edge_detect_0/ap_start] [get_bd_pins one/dout]
+WARNING: [BD 41-1306] The connection to interface pin /sobel_edge_detect_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+connect_bd_net [get_bd_pins sobel_edge_detect_0/ap_rst_n] [get_bd_pins one/dout]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {200.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {5.000} CONFIG.CLKOUT1_JITTER {109.241}] [get_bd_cells clk_wiz]
+endgroup
+connect_bd_net [get_bd_pins dvi2rgb_0/PixelClk] [get_bd_pins v_vid_in_axi4s_0/aclk]
+connect_bd_net [get_bd_pins sobel_edge_detect_0/ap_clk] [get_bd_pins dvi2rgb_0/PixelClk]
+connect_bd_net [get_bd_pins v_axi4s_vid_out_0/aclk] [get_bd_pins dvi2rgb_0/PixelClk]
+connect_bd_net [get_bd_pins rgb2vga_0/PixelClk] [get_bd_pins dvi2rgb_0/PixelClk]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_nets one_dout]
+startgroup
+make_bd_pins_external  [get_bd_pins one/dout]
+endgroup
+regenerate_bd_layout
+connect_bd_net [get_bd_pins sobel_edge_detect_0/ap_start] [get_bd_pins one/dout]
+WARNING: [BD 41-1306] The connection to interface pin /sobel_edge_detect_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+connect_bd_net [get_bd_pins sobel_edge_detect_0/ap_rst_n] [get_bd_pins one/dout]
+regenerate_bd_layout
+set_property name hdmi_hpd [get_bd_ports dout_0]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_net [get_bd_pins v_tc_0/gen_clken] [get_bd_pins v_axi4s_vid_out_0/vtg_ce]
+regenerate_bd_layout
+set_property name vga_pHSync [get_bd_ports vga_pHSync_0]
+set_property name vga_pVSync [get_bd_ports vga_pVSync_0]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+regenerate_bd_layout
+connect_bd_net [get_bd_pins v_tc_0/clk] [get_bd_pins dvi2rgb_0/PixelClk]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+make_wrapper -files [get_files C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [xilinx.com:ip:v_axi4s_vid_out:4.0-307] /v_axi4s_vid_out_0 video_in-TDATA: Bus sub-field mismatch. /v_axi4s_vid_out_0 field count: 3. /sobel_edge_detect_0 stream_out-TDATA field count: 1.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-316] /v_axi4s_vid_out_0 video_in-TDATA: Sub-fields: rows_0_cols_0_G(8:0), rows_0_cols_0_B(16:8), rows_0_cols_0_R(24:16). /sobel_edge_detect_0 stream_out-TDATA sub-fields: integer(24:0)
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_dvi2rgb_0_9_PixelClk 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+add_files -norecurse C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+file mkdir C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/constrs_1
+file mkdir C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/constrs_1/new
+close [ open C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/constrs_1/new/constraint_zybo.xdc w ]
+add_files -fileset constrs_1 C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/constrs_1/new/constraint_zybo.xdc
+set_property name vga_pRed [get_bd_ports vga_pRed_0]
+set_property name vga_pGreen [get_bd_ports vga_pGreen_0]
+set_property name vga_pBlue [get_bd_ports vga_pBlue_0]
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+launch_runs synth_1 -jobs 4
+WARNING: [xilinx.com:ip:v_axi4s_vid_out:4.0-307] /v_axi4s_vid_out_0 video_in-TDATA: Bus sub-field mismatch. /v_axi4s_vid_out_0 field count: 3. /sobel_edge_detect_0 stream_out-TDATA field count: 1.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-316] /v_axi4s_vid_out_0 video_in-TDATA: Sub-fields: rows_0_cols_0_G(8:0), rows_0_cols_0_B(16:8), rows_0_cols_0_R(24:16). /sobel_edge_detect_0 stream_out-TDATA sub-fields: integer(24:0)
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_dvi2rgb_0_9_PixelClk 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sobel_edge_detect_0 .
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at E:/Xilinx/Vivado/Vivado/2018.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block one .
+Exporting to file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Mar 25 15:12:54 2019] Launched design_1_v_tc_0_1_synth_1, design_1_xlconstant_0_1_synth_1, design_1_dvi2rgb_0_9_synth_1, design_1_v_vid_in_axi4s_0_1_synth_1, design_1_v_axi4s_vid_out_0_1_synth_1, design_1_rgb2vga_0_1_synth_1, design_1_xlconstant_0_2_synth_1, design_1_sobel_edge_detect_0_1_synth_1, design_1_clk_wiz_0_synth_1...
+Run output will be captured here:
+design_1_v_tc_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_v_tc_0_1_synth_1/runme.log
+design_1_xlconstant_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_xlconstant_0_1_synth_1/runme.log
+design_1_dvi2rgb_0_9_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_dvi2rgb_0_9_synth_1/runme.log
+design_1_v_vid_in_axi4s_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_v_vid_in_axi4s_0_1_synth_1/runme.log
+design_1_v_axi4s_vid_out_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_v_axi4s_vid_out_0_1_synth_1/runme.log
+design_1_rgb2vga_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_rgb2vga_0_1_synth_1/runme.log
+design_1_xlconstant_0_2_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_xlconstant_0_2_synth_1/runme.log
+design_1_sobel_edge_detect_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_sobel_edge_detect_0_1_synth_1/runme.log
+design_1_clk_wiz_0_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_clk_wiz_0_synth_1/runme.log
+[Mon Mar 25 15:12:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1402.883 ; gain = 50.730
+launch_runs impl_1 -jobs 4
+[Mon Mar 25 15:29:36 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+startgroup
+set_property -dict [list CONFIG.auto_generation_mode {true}] [get_bd_cells v_tc_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.kClkRange {2} CONFIG.kEdidFileName {900p_edid.data}] [get_bd_cells dvi2rgb_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run design_1_v_tc_0_1_synth_1
+reset_run design_1_dvi2rgb_0_9_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+WARNING: [xilinx.com:ip:v_axi4s_vid_out:4.0-307] /v_axi4s_vid_out_0 video_in-TDATA: Bus sub-field mismatch. /v_axi4s_vid_out_0 field count: 3. /sobel_edge_detect_0 stream_out-TDATA field count: 1.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-316] /v_axi4s_vid_out_0 video_in-TDATA: Sub-fields: rows_0_cols_0_G(8:0), rows_0_cols_0_B(16:8), rows_0_cols_0_R(24:16). /sobel_edge_detect_0 stream_out-TDATA sub-fields: integer(24:0)
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_dvi2rgb_0_9_PixelClk 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sobel_edge_detect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block one .
+Exporting to file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Mar 25 15:43:06 2019] Launched design_1_v_tc_0_1_synth_1, design_1_dvi2rgb_0_9_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_tc_0_1_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_v_tc_0_1_synth_1/runme.log
+design_1_dvi2rgb_0_9_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_dvi2rgb_0_9_synth_1/runme.log
+synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/synth_1/runme.log
+[Mon Mar 25 15:43:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1645.613 ; gain = 34.734
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Mar 25 15:56:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1653.090 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279784580A
+ERROR: [Labtools 27-3244] Could not start or connect to xsdb server.
+open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:01:12 . Memory (MB): peak = 2279.063 ; gain = 625.973
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2302.734 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2302.734 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2302.734 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2314.598 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Mon Mar 25 16:18:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+open_bd_design {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Mon Mar 25 16:20:14 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2314.598 ; gain = 0.000
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+open_bd_design {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.kEdidFileName {720p_edid.data}] [get_bd_cells dvi2rgb_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+reset_run design_1_dvi2rgb_0_9_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [xilinx.com:ip:v_axi4s_vid_out:4.0-307] /v_axi4s_vid_out_0 video_in-TDATA: Bus sub-field mismatch. /v_axi4s_vid_out_0 field count: 3. /sobel_edge_detect_0 stream_out-TDATA field count: 1.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-316] /v_axi4s_vid_out_0 video_in-TDATA: Sub-fields: rows_0_cols_0_G(8:0), rows_0_cols_0_B(16:8), rows_0_cols_0_R(24:16). /sobel_edge_detect_0 stream_out-TDATA sub-fields: integer(24:0)
+WARNING: [BD 41-927] Following properties on pin /dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_dvi2rgb_0_9_PixelClk 
+Wrote  : <C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sobel_edge_detect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgb2vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block one .
+Exporting to file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Mar 25 16:26:54 2019] Launched design_1_dvi2rgb_0_9_synth_1, synth_1...
+Run output will be captured here:
+design_1_dvi2rgb_0_9_synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/design_1_dvi2rgb_0_9_synth_1/runme.log
+synth_1: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/synth_1/runme.log
+[Mon Mar 25 16:26:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 2337.676 ; gain = 8.156
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2338.496 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279784580A
+ERROR: [Labtools 27-3244] Could not start or connect to xsdb server.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2338.496 ; gain = 0.000
+close_hw
+write_bd_layout -format pdf -orientation portrait C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/design_1_sobel_working_720p_march25.pdf
+C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/design_1_sobel_working_720p_march25.pdf
+archive_project C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/sobel_zybo.xpr.zip -temp_dir C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/sobel_edge_hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/user/Desktop/sobel_zedboard_zybo/vivado_library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/Vivado/2018.2/data/ip'.
+create_property: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2379.242 ; gain = 0.078
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/user/Desktop/sobel_zedboard_zybo/sobel_zybo/.Xil/Vivado-5056-userPC/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_v_tc_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_xlconstant_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_dvi2rgb_0_9_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_v_vid_in_axi4s_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_v_axi4s_vid_out_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_rgb2vga_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_xlconstant_0_2_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_sobel_edge_detect_0_1_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'design_1_clk_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_tc_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xlconstant_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_dvi2rgb_0_9_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_vid_in_axi4s_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_v_axi4s_vid_out_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_rgb2vga_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_xlconstant_0_2_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_sobel_edge_detect_0_1_impl_1'...
+INFO: [Coretcl 2-133] re-setting run 'design_1_clk_wiz_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_dvi2rgb_0_9'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_dvi2rgb_0_9'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_rgb2vga_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_rgb2vga_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_sobel_edge_detect_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_sobel_edge_detect_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_axi4s_vid_out_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_axi4s_vid_out_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_tc_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_tc_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_v_vid_in_axi4s_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_v_vid_in_axi4s_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xlconstant_0_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xlconstant_0_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'design_1_xlconstant_0_2'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'design_1_xlconstant_0_2'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

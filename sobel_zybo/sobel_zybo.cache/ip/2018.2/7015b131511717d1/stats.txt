@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Mon Mar 25 09:40:55 UTC 2019
+VLNV: xilinx.com:hls:sobel_edge_detect:1.0
+SynthRuntime: 157
