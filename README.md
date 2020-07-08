@@ -8,4 +8,4 @@
 
 * Taking real-time HDMI input (say, from a camera), it can display the input directly (i.e., without applying any filter) or after applying a filter (i.e., sobel filter in our case) on the VGA screen.
 
-* Before moving into the details, let us recall what sobel filter does. (Skip this part if you already know about it!)
+* Before moving into the details, let us recall what sobel filter does. The Sobel filter calculates the gradient of image intensity at each pixel within an image. It finds the direction of the largest increase from light to dark and the rate of change in that direction. The result shows how abruptly or smoothly the image changes at each pixel, and therefore how likely it is that, that pixel represents an edge. It also shows how that edge is likely to be oriented. The result of applying the filter to a pixel in a region of constant intensity is a zero vector. The result of applying it to a pixel on an edge is a vector that points across the edge from darker to brighter values.
