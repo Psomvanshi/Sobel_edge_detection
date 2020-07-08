@@ -1,4 +1,4 @@
-<img src = 'https://github.com/Psomvanshi/Sobel_edge_detection/blob/master/images/zybo_xilinx.jpeg' style="width:400px; float: center; margin: 0 40px 40px 40px;"></img>
+<p align="center"><img src = 'https://github.com/Psomvanshi/Sobel_edge_detection/blob/master/images/zybo_xilinx.jpeg'></img></p>
 
 # Sobel Edge Detection
 
