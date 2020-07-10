@@ -4,7 +4,7 @@
 
 ![purple-divider](https://user-images.githubusercontent.com/7065401/52071927-c1cd7100-2562-11e9-908a-dde91ba14e59.png)
 
-* This project perfoms real-time image processing on [Zybo Xilinx FPGA development kit](https://www.xilinx.com/products/boards-and-kits/1-pukio3.html). It incorporates the use of [Vivado HLS(high-level synthesis) tool](https://www.xilinx.com/products/design-tools/vivado/integration/esl-design.html) to easily implement our image processing algorithm in C++ instead of RTL(Right-transfer level). 
+* This project perfoms real-time image processing on [Zybo Xilinx FPGA development kit](https://www.xilinx.com/products/boards-and-kits/1-pukio3.html). It incorporates the use of [Vivado HLS(high-level synthesis) tool](https://www.xilinx.com/products/design-tools/vivado/integration/esl-design.html) to easily implement our image processing algorithm in C++ instead of RTL(Register-Transfer Level). 
 
 * Taking real-time HDMI input (say, from a camera), it can display the input directly (i.e., without applying any filter) or after applying a filter (i.e., sobel filter in our case) on the VGA screen.
 
