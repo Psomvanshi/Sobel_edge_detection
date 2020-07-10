@@ -23,7 +23,7 @@
 
 4. Sobel edge detection --> Custom IP developed using Vivado HLS which applies sobel filter to input AXI-stream.
 
-5. Video time controller --> Generated timing signals for AXI-stream and video interconversion for a particular resolution. Also ensures frame synchronization between input and output stream using horizontal and vertical blank detection.
+5. Video time controller --> Generates timing signals for AXI-stream and video interconversion for a particular resolution. Also ensures frame synchronization between input and output stream using horizontal and vertical blank detection.
 
 6. RGB to VGA output --> Converts RGB to VGA that can be displayed on an external monitor screen.
 
